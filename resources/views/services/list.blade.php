@@ -19,12 +19,14 @@
                     <!-- Botões Editar/Deletar no canto superior direito -->
                     <div class="absolute top-2 right-2 flex space-x-2">
                         <a href="{{ route('services.edit', $service->id) }}"
-                            class="px-2 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-xs">Editar</a>
+                            class="px-3 py-1 border border-blue-600 text-blue-600 font-semibold rounded hover:bg-blue-50 text-sm transition">
+                            Editar
+                        </a>
                         <form action="{{ route('services.destroy', $service->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" onclick="return confirm('Tem certeza que deseja deletar este serviço?')"
-                                class="px-2 py-1 bg-red-600 text-white rounded hover:bg-red-700 text-xs">
+                                class="px-3 py-1 border border-red-600 text-red-600 font-semibold rounded hover:bg-red-50 text-sm transition">
                                 Excluir
                             </button>
                         </form>
@@ -36,7 +38,7 @@
 
                     <!-- Botão Ver logs -->
                     <a href="{{ route('services.show', $service->id) }}"
-                        class="inline-block mt-auto px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+                        class="inline-block mt-auto px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition font-semibold text-sm">
                         Ver logs
                     </a>
                 </div>
