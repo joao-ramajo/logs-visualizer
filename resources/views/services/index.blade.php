@@ -16,7 +16,10 @@
         <h2 class="text-3xl font-semibold mb-6">{{ $service->name }}</h2>
 
         <!-- Tabela de Logs -->
-        <div class="bg-white shadow rounded-xl overflow-hidden">
+        <div class="bg-white shadow rounded-xl overflow-hidden" x-data="{
+            url: "teste"
+        }">
+            <div></div>
             <table class="min-w-full text-left text-sm">
                 <thead class="bg-gray-100 text-gray-700">
                     <tr>
@@ -60,4 +63,24 @@
                 </table>
             </div>
         </main>
+
+        <script>
+            function groupList(apiUrl) {
+                return {
+                    groups: [],
+                    apiUrl: apiUrl,
+
+                    async loadGroups() {
+                        try {
+                            const response = await fetch(this.apiUrl);
+                            const data = await response.json();
+                            this.groups = data;
+                        } catch (error) {
+                            console.error('Erro ao carregar grupos:', error);
+                        }
+                    }
+                };
+            }
+        </script>
+
     @endsection
