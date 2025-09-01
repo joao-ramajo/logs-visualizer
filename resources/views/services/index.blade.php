@@ -26,35 +26,36 @@
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
-                    @forelse($logs as $log)
-                        <tr>
-                            <td>{{ $log['date'] ?? '—' }}</td>
-                            <td>
-                                @switch(strtoupper($log['level'] ?? ''))
-                                    @case('INFO')
-                                        <span class="text-green-600">INFO</span>
-                                    @break
-
-                                    @case('WARNING')
-                                        <span class="text-yellow-600">WARNING</span>
-                                    @break
-
-                                    @case('ERROR')
-                                        <span class="text-red-600">ERROR</span>
-                                    @break
-
-                                    @default
-                                        <span>{{ $log['level'] ?? '—' }}</span>
-                                @endswitch
-                            </td>
-                            <td>{{ $log['message'] ?? '—' }}</td>
-                        </tr>
-                        @empty
+                    @if ($logs)
+                        @forelse($logs as $log)
                             <tr>
-                                <td colspan="3" class="text-center text-gray-500">Nenhum log encontrado.</td>
-                            </tr>
-                        @endforelse
+                                <td>{{ $log['date'] ?? '—' }}</td>
+                                <td>
+                                    @switch(strtoupper($log['level'] ?? ''))
+                                        @case('INFO')
+                                            <span class="text-green-600">INFO</span>
+                                        @break
 
+                                        @case('WARNING')
+                                            <span class="text-yellow-600">WARNING</span>
+                                        @break
+
+                                        @case('ERROR')
+                                            <span class="text-red-600">ERROR</span>
+                                        @break
+
+                                        @default
+                                            <span>{{ $log['level'] ?? '—' }}</span>
+                                    @endswitch
+                                </td>
+                                <td>{{ $log['message'] ?? '—' }}</td>
+                            </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="3" class="text-center text-gray-500">Nenhum log encontrado.</td>
+                                </tr>
+                            @endforelse
+                        @endif
                     </tbody>
                 </table>
             </div>
