@@ -3,11 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use App\services\Loggers\MonologService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
 class ServiceController extends Controller
 {
+    public function __construct(
+        protected MonologService $logger
+    )
+    {
+    }
     /**
      * Display a listing of the resource.
      */
@@ -54,16 +60,26 @@ class ServiceController extends Controller
     {
         $service = Service::findOrFail($id);
 
-        $logs = [];
         try {
-            $response = Http::get($service->url);  // Faz a requisição GET
-            $logs = $response->json();  // Converte JSON em array
+            $response = Http::withToken(env('API_FECOMERCIO_KEY'))
+                ->acceptJson()
+                ->get($service->url);
+
+            $rawLogs = $response->successful() ? $response->json() : [];
         } catch (\Exception $e) {
-            // Caso dê erro, retorna mensagem de erro
-            $logs = [
-                ['date' => now(), 'level' => 'ERROR', 'message' => 'Não foi possível obter os logs do serviço.']
+            logger()->error('Erro ao buscar logs', ['exception' => $e]);
+            $rawLogs = [
+                [
+                    'timestamp' => now()->toDateTimeString(),
+                    'level' => 'ERROR',
+                    'context' => 'ERROR',
+                    'message' => 'Não foi possível obter os logs do serviço.'
+                ]
             ];
         }
+        $logs = $this->logger->handle($rawLogs);
+
+        // dd($logs);
 
         return view('services.index', compact('service', 'logs'));
     }

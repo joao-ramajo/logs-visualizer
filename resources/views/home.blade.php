@@ -7,7 +7,7 @@
     <!-- Conteúdo -->
     <main class="container mx-auto px-6 py-10">
         @if (session('success'))
-            <div class="mb-4 rounded-lg bg-green-100 border border-green-400 text-green-700 px-4 py-3 relative"
+            <div class="mb-4 rounded-lg bg-amber-50 bg-green-100 border border-green-400 text-green-700 px-4 py-3 relative"
                 role="alert">
                 <span class="block sm:inline">{{ session('success') }}</span>
             </div>

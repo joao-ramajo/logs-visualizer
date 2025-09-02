@@ -12,10 +12,10 @@ export default defineConfig({
     ],
     server: {
     host: '0.0.0.0',
-    port: 5173, // ou a porta que você usa para Vite
+    port: 5174, // ou a porta que você usa para Vite
     hmr: {
       host: 'localhost',
-      port: 5173,
+      port: 5174,
     },
   },
 });
