@@ -13,7 +13,7 @@
             </svg>
             Voltar
         </a>
-        <h2 class="text-3xl font-semibold mb-6">{{ $service->name }}</h2>
+        <h2 class="text-3xl font-semibold mb-6">{{ $service->name }} | {{ $service->type }}</h2>
 
         <!-- Tabela de Logs -->
 

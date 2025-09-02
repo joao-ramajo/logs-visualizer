@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Service;
 use App\services\Loggers\MonologService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Http;
 
 class ServiceController extends Controller
@@ -39,11 +40,17 @@ class ServiceController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'url' => 'required|url|max:255',
+            'api_key' => 'required|string',
+            'type' => 'required'
         ]);
+
+        $api_key = Crypt::encryptString($request->input('api_key'));
 
         $service = new Service([
             'name' => $request->input('name'),
             'url' => $request->input('url'),
+            'api_key' => $api_key,
+            'type' => $request->input('type')
         ]);
 
         $service->save();
@@ -60,8 +67,10 @@ class ServiceController extends Controller
     {
         $service = Service::findOrFail($id);
 
+        $api_key = Crypt::decryptString($service->api_key);
+
         try {
-            $response = Http::withToken(env('API_FECOMERCIO_KEY'))
+            $response = Http::withToken($api_key)
                 ->acceptJson()
                 ->get($service->url);
 
@@ -102,13 +111,19 @@ class ServiceController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'url' => 'required|url|max:255',
+            'api_key' => 'required|string',
+            'type' => 'required'
         ]);
 
         $service = Service::findOrFail($id);
+        
+        $api_key = Crypt::encryptString($request->input('api_key'));
 
         $service->update([
             'name' => $request->input('name'),
             'url' => $request->input('url'),
+            'api_key' => $api_key,
+            'type' => $request->input('type')
         ]);
 
         return redirect()
