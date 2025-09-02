@@ -55,20 +55,20 @@
                                     @default
                                         <span
                                             class="inline-block px-3 py-1 text-gray-700 bg-gray-100 rounded-full text-xs font-semibold">
-                                            {{ $log['cpmtext'] ?? '—' }}
+                                            {{ $log['context'] ?? '—' }}
                                         </span>
                                 @endswitch
                             </td>
 
                             <!-- Mensagem -->
-                            <td class="px-6 py-4">{{ $log['text'] ?? '—' }}</td>
+                            <td class="px-6 py-4"><div class="max-h-24 max-w-sm overflow-auto text-sm text-gray-800 whitespace-pre-wrap">{{ $log['text'] ?? '—' }}</div></td>
+
+
 
                             <!-- Contexto -->
                             <td class="px-6 py-4">
                                 @if (is_array($log['data']) && !empty($log['data']))
-                                    <pre class="text-xs text-gray-700 bg-gray-100 p-2 rounded">
-{{ json_encode($log['data'], JSON_PRETTY_PRINT) }}
-                            </pre>
+                                    <div class="max-h-40 max-w-sm overflow-auto text-xs text-gray-700 bg-gray-100 p-2 rounded"><pre class="whitespace-pre-wrap">{{ json_encode($log['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</pre></div>
                                 @else
                                     <span>{{ $log['data'] ?? '—' }}</span>
                                 @endif

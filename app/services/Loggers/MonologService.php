@@ -10,17 +10,29 @@ class MonologService
             $messageData = $log['message'] ?? '';
 
             $decoded = null;
-            if (preg_match('/\{.*\}$/', $messageData)) {
-                $jsonPart = substr($messageData, strpos($messageData, '{'));
+            $text = $messageData;
+
+            // Tenta separar mensagem do JSON no final da string (com ou sem quebras de linha)
+            if (preg_match('/^(.*?)(\{.*\})\s*$/s', $messageData, $matches)) {
+                $text = trim($matches[1]);
+                $jsonPart = trim($matches[2]);
+
+                // Tenta decodificar o JSON
                 $decoded = json_decode($jsonPart, true);
+
+                // Se falhar ao decodificar, mantém texto original
+                if (json_last_error() !== JSON_ERROR_NONE) {
+                    $text = $messageData;
+                    $decoded = null;
+                }
             }
 
             return [
                 'timestamp' => $log['timestamp'] ?? null,
                 'level' => $log['level'] ?? null,
                 'context' => $log['context'] ?? null,
-                'text' => trim(explode('{', $messageData)[0]),  // só o texto antes do JSON
-                'data' => $decoded,  // array decodificado do JSON, se houver
+                'text' => $text,
+                'data' => $decoded,
             ];
         });
 
