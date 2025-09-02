@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\Service;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Crypt;
 
 class ServiceSeeder extends Seeder
 {
@@ -14,21 +15,17 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'name' => 'Autenticação',
-                'url' => 'https://mockapi.io/services/auth/logs',
+                'name' => 'TGarante Auth API',
+                'url' => 'https://api.payment.com',
+                'api_key' => Crypt::encryptString('key_payment_123'),
+                'type' => 'monolog',
             ],
             [
-                'name' => 'Pagamentos',
-                'url' => 'https://mockapi.io/services/payments/logs',
-            ],
-            [
-                'name' => 'Notificações',
-                'url' => 'https://mockapi.io/services/notifications/logs',
-            ],
-            [
-                'name' => 'Relatórios',
-                'url' => 'https://mockapi.io/services/reports/logs',
-            ],
+                'name' => 'Fecomercio API',
+                'url' => 'https://api.notifications.com',
+                'api_key' => Crypt::encryptString('key_notifications_456'),
+                'type' => 'monolog'
+            ]
         ];
 
         foreach ($services as $service) {
