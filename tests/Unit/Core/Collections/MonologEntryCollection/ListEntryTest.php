@@ -43,8 +43,3 @@ test('lista corretamente uma série de entidades', function () {
     expect($coll->all())->toBeArray();
     expect(count($coll->all()))->toBe(5);
 });
-
-test('vai falhar', function()
-{
-    expect(false)->toBeTrue();
-});
