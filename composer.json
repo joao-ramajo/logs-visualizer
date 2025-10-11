@@ -11,7 +11,8 @@
     },
 
     "scripts": {
-        "test": "./vendor/bin/pest"
+        "test": "./vendor/bin/pest",
+        "stan": "vendor/bin/phpstan analyse -l 5 src"
     },
 
     "authors": [
@@ -21,7 +22,8 @@
         }
     ],
     "require-dev": {
-        "pestphp/pest": "^4.1"
+        "pestphp/pest": "^4.1",
+        "phpstan/phpstan": "^2.1"
     },
     "config": {
         "allow-plugins": {
