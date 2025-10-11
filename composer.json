@@ -6,7 +6,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ramajo\\LogsVisualizer\\": "src/",
+            "Ramajo\\": "src/",
             "Tests\\": "tests/"
         }
     },

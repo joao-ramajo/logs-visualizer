@@ -1,0 +1,10 @@
+[2025-10-11 14:22:01] INFO: Application started successfully.
+[2025-10-11 14:22:02] DEBUG: Loaded configuration file: /config/app.php
+[2025-10-11 14:22:05] WARNING: Cache directory not found, using default.
+[2025-10-11 14:22:10] ERROR: Failed to connect to database (SQLSTATE[HY000] [2002] Connection refused)
+[2025-10-11 14:22:15] INFO: Retrying database connection...
+[2025-10-11 14:22:18] INFO: Database connection established.
+[2025-10-11 14:22:20] DEBUG: User session started: user_id=42
+[2025-10-11 14:22:35] INFO: User requested resource /dashboard
+[2025-10-11 14:23:01] ERROR: Unexpected token in JSON payload at line 23
+[2025-10-11 14:23:15] INFO: Application terminated gracefully.
