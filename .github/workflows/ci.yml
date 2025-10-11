@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+    pull_request:
+      - dev
+      - main
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, bcmath, pcntl
+          tools: composer
+
+      - name: Instalar dependências
+        run: composer install
+
+      - name: Rodar a análise de qualidade do código
+        run: composer quality
