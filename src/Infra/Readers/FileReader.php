@@ -2,6 +2,7 @@
 
 namespace Ramajo\Infra\Readers;
 
+use Ramajo\Core\Exceptions\LogFileNotFoundException;
 use Ramajo\Core\Interfaces\LogReaderInterface;
 
 class FileReader implements LogReaderInterface
@@ -9,7 +10,7 @@ class FileReader implements LogReaderInterface
     public function read(string $file): array
     {
         if (!file_exists($file)) {
-            throw new \Exception('Arquivo ' . $file . ' não encontrado.');
+            throw new LogFileNotFoundException('Arquivo ' . $file . ' não encontrado.');
         }
 
         $handle = fopen($file, 'r');
