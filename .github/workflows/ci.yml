@@ -17,13 +17,13 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Instala Docker
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
 
-      - name: Buil da imagem Docker
-        run: docker build -t logs-visualizer .
+      - name: Instala dependências
+        run: composer install --prefer-dist --no-interaction
 
-      - name: Roda o script de análise de qualidade do código
-        run: docker run --rm -v ${{ github.workspace }}:/app logs-visualizer composer quality
+      - name: Rodar qualidade do código
+        run: composer quality
