@@ -1,0 +1,26 @@
+{
+    "name": "ramajo/logs-visualizer",
+    "description": "Biblioteca de processamento de informações sobre logs para o ecosistema PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ramajo\\LogsVisualizer\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Ramajo",
+            "email": "joaoramajo744@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^4.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
