@@ -45,3 +45,4 @@ test('lista corretamente uma série de entidades', function () {
 });
 
 test('', function(){expect(false)->toBeTrue();});
+echo "teste";
