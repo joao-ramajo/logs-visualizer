@@ -7,7 +7,7 @@ test('adiciona uma entidade corretamente dentro da coleção', function() {
     $collection = new MonologEntryCollection();
 
     $entry = new MonologEntry(
-        timestamp: '',
+        timestamp: new DateTimeImmutable(),
         level: '',
         message: ''
     );

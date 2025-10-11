@@ -28,6 +28,15 @@ Ferramentas como Grafana e ELK são robustas, mas demandam tempo de setup e infr
 
 ---
 
+## Funcionalidades Implementadas
+- Leitura de arquivos de log através da classe **FileReader**.
+- Estruturação de logs no padrão **Monolog**.
+- Parseamento e transformação das informações em **objetos estruturados (JSON-like)** via **MonologAdapter**.
+- Coleções de entradas de log com suporte a iteração e contagem de registros (**MonologEntryCollection**).
+- Tratamento de exceções personalizadas, como **LogFileNotFoundException**.
+
+---
+
 ## Instalação
 
 ```bash
@@ -36,44 +45,43 @@ composer require joao-ramajo/logs-visualizer
 
 ---
 
-## Uso
+## Exemplo de uso
 
 ```php
 use Ramajo\Infra\Readers\FileReader;
 use Ramajo\Infra\Adapters\MonologAdapter;
 
+// 1. Instancia o leitor de arquivos de log
 $reader = new FileReader();
+
+// 2. Lê o conteúdo do arquivo de log
+// Retorna um array onde cada elemento é uma linha do log
 $content = $reader->read('storage/logs/laravel.log');
 
+// 3. Instancia o adapter para logs Monolog
 $adapter = new MonologAdapter();
+
+// 4. Parseia as linhas lidas e retorna uma coleção de objetos MonologEntry
 $collection = $adapter->parse($content);
 
+// 5. Itera sobre a coleção e exibe nível e mensagem de cada log
 foreach ($collection as $entry) {
-    echo $entry->getLevel() . ': ' . $entry->getMessage();
+    echo $entry->getLevel() . ': ' . $entry->getMessage() . PHP_EOL;
 }
 ```
 
----
-
-## Arquitetura
-
-```
-src/
-├── Core/     # Entities, Collections, Interfaces
-└── Infra/    # Adapters, Readers
-```
-
-**Clean Architecture:** Separação clara entre domínio e infraestrutura.
+>O **FileReader** lê o arquivo de log e retorna um array de linhas. O **MonologAdapter** converte essas linhas em objetos **MonologEntry**, encapsulados em uma coleção **MonologEntryCollection**, permitindo iteração e manipulação fácil dos registros.
 
 ---
 
-## Testes
+## Scripts para desenvolvimento
 
 ```bash
 composer test      # Rodar testes
 composer stan      # Análise estática
-composer quality   # PHPStan + Testes
 ```
+
+Também há o script de **quality** mas seu uso deve estar restrito a execução do CI.
 
 ---
 
@@ -88,6 +96,8 @@ composer quality   # PHPStan + Testes
 - ✅ Testes unitários
 
 **Próximos passos:**
+- Leitura performática de arquivos para evitar estouro de mémoria
+- Permitir a busca dos X logs mais recentes para análise e debug
 - Múltiplos formatos (Apache, Nginx, Laravel)
 - Filtros e buscas
 - API REST

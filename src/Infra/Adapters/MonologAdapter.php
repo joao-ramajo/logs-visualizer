@@ -2,6 +2,7 @@
 
 namespace Ramajo\Infra\Adapters;
 
+use DateTimeImmutable;
 use Ramajo\Core\Collections\MonologEntryCollection;
 use Ramajo\Core\Entities\MonologEntry;
 use Ramajo\Core\Interfaces\LogAdapterInterface;
@@ -15,7 +16,7 @@ class MonologAdapter implements LogAdapterInterface
         foreach ($lines as $line) {
             if (preg_match('/^\[(?<timestamp>.*?)\]\s+(?<level>\w+):\s+(?<message>.*)$/', $line, $matches)) {
                 $collection->add(new MonologEntry(
-                    timestamp: $matches['timestamp'],
+                    timestamp: new DateTimeImmutable($matches['timestamp']),
                     level: $matches['level'],
                     message: $matches['message'],
                 ));

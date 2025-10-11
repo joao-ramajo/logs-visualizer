@@ -11,4 +11,11 @@ $res = $reader->read('mock/arquivo.log');
 
 $adapter = new MonologAdapter();
 
-var_dump($adapter->parse($res));
+$collection = $adapter->parse($res);
+
+
+$entry = $collection->get(0);
+
+var_dump($entry);
+
+echo $entry->getLevel();
