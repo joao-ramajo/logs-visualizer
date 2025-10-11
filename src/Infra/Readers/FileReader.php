@@ -2,9 +2,9 @@
 
 namespace Ramajo\Infra\Readers;
 
-use Ramajo\Core\Interfaces\LogFileReaderInterface;
+use Ramajo\Core\Interfaces\LogReaderInterface;
 
-class FileReader implements LogFileReaderInterface
+class FileReader implements LogReaderInterface
 {
     public function read(string $file): array
     {

@@ -2,7 +2,7 @@
 
 namespace Ramajo\Core\Interfaces;
 
-interface LogFileReaderInterface
+interface LogReaderInterface
 {
     public function read(string $file): array;
 }
