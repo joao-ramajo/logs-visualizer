@@ -2,10 +2,11 @@
 
 namespace Ramajo\Core\Collections;
 
+use Countable;
 use Ramajo\Core\Interfaces\EntryCollectionInterface;
 use Ramajo\Core\Interfaces\LogEntryInterface;
 
-class MonologEntryCollection implements EntryCollectionInterface
+class MonologEntryCollection implements EntryCollectionInterface, Countable
 {
     public function __construct(
         private array $entries = []
@@ -19,5 +20,10 @@ class MonologEntryCollection implements EntryCollectionInterface
     public function all(): array
     {
         return $this->entries;
+    }
+
+    public function count(): int
+    {
+        return count($this->entries);
     }
 }

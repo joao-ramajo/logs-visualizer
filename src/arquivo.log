@@ -1,3 +1,5 @@
+[2025-10-11 14:23:01] ERROR: Unexpected token in JSON payload at line 23
+[2025-10-11 14:23:15] INFO: Application terminated gracefully.
 [2025-10-11 14:22:01] INFO: Application started successfully.
 [2025-10-11 14:22:02] DEBUG: Loaded configuration file: /config/app.php
 [2025-10-11 14:22:05] WARNING: Cache directory not found, using default.
