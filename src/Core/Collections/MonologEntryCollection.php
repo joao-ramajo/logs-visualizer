@@ -3,6 +3,7 @@
 namespace Ramajo\Core\Collections;
 
 use Countable;
+use Ramajo\Core\Entities\MonologEntry;
 use Ramajo\Core\Interfaces\EntryCollectionInterface;
 use Ramajo\Core\Interfaces\LogEntryInterface;
 
@@ -25,5 +26,10 @@ class MonologEntryCollection implements EntryCollectionInterface, Countable
     public function count(): int
     {
         return count($this->entries);
+    }
+
+    public function get(int $index): MonologEntry
+    {
+        return $this->entries[$index];
     }
 }
