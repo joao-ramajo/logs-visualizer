@@ -10,7 +10,7 @@ class FileReader implements LogReaderInterface
     public function read(string $file): array
     {
         if (!file_exists($file)) {
-            throw new LogFileNotFoundException('Arquivo ' . $file . ' não encontrado.');
+            throw new LogFileNotFoundException($file);
         }
 
         $handle = fopen($file, 'r');
