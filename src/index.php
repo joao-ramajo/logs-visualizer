@@ -7,7 +7,7 @@ require_once __DIR__ . '/bootstrap.php';
 
 $reader = new FileReader();
 
-$res = $reader->read('src/arquivo.log');
+$res = $reader->read('mock/arquivo.log');
 
 $adapter = new MonologAdapter();
 
