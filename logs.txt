@@ -1,5 +1,0 @@
-859cd5b feat: adiciona Dockerfile para configuração do ambiente em docker
-c2c39a2 chore: configura a versão do projeto para 0.0.1 no composer.json
-8986776 config: adiciona configurações para rodar o PHPSTAN a partir de um script no composer.json
-4a24bdc chore: adiciona script no composer.json para execução de testes
-7d509a0 config: configurando setup de execução de testes com Pest
