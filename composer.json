@@ -12,7 +12,7 @@
     },
 
     "scripts": {
-        "test": "docker run -it --rm -v $(pwd):/app logs-visualizer ./vendor/bin/pest",
+        "test": "docker run -it --rm -v $(pwd):/app logs-visualizer ./vendor/bin/pest --coverage",
         "stan": "docker run -it --rm -v $(pwd):/app logs-visualizer vendor/bin/phpstan analyse -l 5 src",
         "index": "docker run --rm -v $(pwd):/app logs-visualizer php src/index.php",
         "quality": [

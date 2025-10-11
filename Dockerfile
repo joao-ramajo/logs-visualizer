@@ -17,6 +17,13 @@ RUN apk add --no-cache \
 
 RUN docker-php-ext-install mbstring pcntl bcmath
 
+RUN apk add --no-cache $PHPIZE_DEPS \
+    && pecl install pcov \
+    && docker-php-ext-enable pcov
+
+ENV PCOV_ENABLED=1
+ENV PCOV_DIRECTORY=/app/src
+
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
