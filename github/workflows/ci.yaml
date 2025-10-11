@@ -27,8 +27,5 @@ jobs:
       - name: Instalar dependências
         run: composer install
 
-      - name: Rodar PHPStan
-        run: composer stan
-
-      - name: Rodar testes com Pest
-        run: composer test
+      - name: Rodar a análise de qualidade do código
+        run: composer quality
