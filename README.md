@@ -88,6 +88,38 @@ object(Ramajo\Core\Collections\MonologEntryCollection)#9 (1) {
 
 ```
 
+### Também podemos transformar em JSON
+
+```php
+use Ramajo\App\LogVisualizer;
+use Ramajo\Infra\Strategies\MonologStrategy;
+
+$visualizer = new LogVisualizer('mock/arquivo.log', new MonologStrategy());
+
+$tail = $visualizer->tail();
+
+$json = $visualizer->toJson($tail);
+
+echo $json;
+```
+
+Com isso teremos um retorno como
+
+```json
+[
+  {
+    "timestamp":"2025-10-11 14:23:15",
+    "level":"INFO",
+    "message":"Application terminated gracefully."
+  },
+  {
+    "timestamp":"2025-10-11 14:24:01",
+    "level":"ERROR",
+    "message":"Something went wrong."
+  }
+]
+```
+
 ---
 
 ## Scripts para desenvolvimento
