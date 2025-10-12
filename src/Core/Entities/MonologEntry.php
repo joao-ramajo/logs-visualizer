@@ -39,8 +39,6 @@ class MonologEntry implements LogEntryInterface
 
     public function toJson()
     {
-        $arr = $this->toArray();
-
         return json_encode($this->toArray());
     }
 }
