@@ -32,4 +32,9 @@ class MonologEntryCollection implements EntryCollectionInterface, Countable
     {
         return $this->entries[$index];
     }
+
+    public function getIterator(): \Traversable
+    {
+        return new \ArrayIterator($this->entries);
+    }
 }

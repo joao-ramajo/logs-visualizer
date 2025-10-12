@@ -5,7 +5,9 @@ namespace Ramajo\Infra\Adapters;
 use DateTimeImmutable;
 use Ramajo\Core\Collections\MonologEntryCollection;
 use Ramajo\Core\Entities\MonologEntry;
+use Ramajo\Core\Interfaces\EntryCollectionInterface;
 use Ramajo\Core\Interfaces\LogAdapterInterface;
+use Ramajo\Core\Interfaces\LogEntryInterface;
 
 class MonologAdapter implements LogAdapterInterface
 {
@@ -24,5 +26,16 @@ class MonologAdapter implements LogAdapterInterface
         }
 
         return $collection;
+    }
+
+    public function toJson(EntryCollectionInterface $entries): string
+    {
+        $json = '';
+
+        foreach($entries as $entry){
+            $json .= $entry->toJson();
+        }
+
+        return $json;
     }
 }

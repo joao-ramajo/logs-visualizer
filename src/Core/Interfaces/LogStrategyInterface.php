@@ -8,4 +8,6 @@ use Ramajo\Core\Interfaces\EntryCollectionInterface;
 interface LogStrategyInterface
 {
     public function process(File $file, int $lines = 10): EntryCollectionInterface;
+
+    public function toJson(EntryCollectionInterface $entries): string;
 }
