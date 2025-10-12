@@ -9,6 +9,5 @@ $visualizer = new LogVisualizer('mock/arquivo.log', new MonologStrategy());
 
 $tail = $visualizer->tail();
 
-$json = $visualizer->toJson($tail);
+var_dump($tail);
 
-echo $json;

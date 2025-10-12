@@ -1,21 +1,20 @@
 <?php
 
 use Ramajo\Core\Entities\MonologEntry;
+use Ramajo\Core\Factories\MonologEntryFactory;
 
 beforeEach(function() {
-    $this->entry = new MonologEntry(new DateTimeImmutable(), 'INFO', 'Loremiplsum dolor amet');
+    $this->entry = MonologEntryFactory::make(message: 'Mensagem');
 });
 
 test('retorna o level de debug', function() {
-    expect($this->entry->getLevel())->toBeString();
-    expect($this->entry->getLevel())->toBe('INFO');
+    expect($this->entry->getLevel())->toBeString()->toBe('INFO');
 });
 
 test('retorna a mensagem do log', function() {
     $message = $this->entry->getmessage();
-
-    expect($message)->toBeString();
-    expect($message)->toBe('Loremiplsum dolor amet');
+    
+    expect($message)->toBeString()->toBe('Mensagem');
 });
 
 test('transforma uma instancia do log para um array', function() {

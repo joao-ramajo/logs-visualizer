@@ -2,15 +2,12 @@
 
 use Ramajo\Core\Collections\MonologEntryCollection;
 use Ramajo\Core\Entities\MonologEntry;
+use Ramajo\Core\Factories\MonologEntryFactory;
 
 test('adiciona uma entidade corretamente dentro da coleção', function() {
     $collection = new MonologEntryCollection();
 
-    $entry = new MonologEntry(
-        timestamp: new DateTimeImmutable(),
-        level: '',
-        message: ''
-    );
+    $entry = MonologEntryFactory::make();
 
     expect($collection->count())->toBe(0);
 

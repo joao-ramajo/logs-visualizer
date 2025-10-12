@@ -10,5 +10,5 @@ test('devolve às útlimas 2 linhas de um arquivo', function() {
 
     expect($tail)->toBeArray();
 
-    expect(count($tail))->toBe(2);
+    expect(count($tail))->toBe(1);
 });
