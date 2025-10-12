@@ -3,7 +3,9 @@
 namespace Ramajo\Core\Collections;
 
 use Countable;
+use Exception;
 use Ramajo\Core\Entities\MonologEntry;
+use Ramajo\Core\Exceptions\LogEntryNotFoundException;
 use Ramajo\Core\Interfaces\EntryCollectionInterface;
 use Ramajo\Core\Interfaces\LogEntryInterface;
 
@@ -30,6 +32,10 @@ class MonologEntryCollection implements EntryCollectionInterface, Countable
 
     public function get(int $index): MonologEntry
     {
+        if (!array_key_exists($index, $this->entries)) {
+            throw new LogEntryNotFoundException($index);
+        }
+
         return $this->entries[$index];
     }
 

@@ -7,8 +7,9 @@ use Ramajo\Infra\Strategies\MonologStrategy;
 
 $visualizer = new LogVisualizer('mock/laravel.log', new MonologStrategy());
 
-$tail = $visualizer->tail();
+$collection = $visualizer->tail();
 
-$json = $tail->toJson();
+$json = $collection->toJson();
+$index = $collection->get(5213);
 
-echo $json;
+var_dump($index);
