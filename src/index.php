@@ -7,16 +7,18 @@ use Ramajo\Infra\Adapters\MonologAdapter;
 use Ramajo\Infra\Readers\FileReader;
 
 
-// $reader = new FileReader();
+$reader = new FileReader();
 
-// // $res = $reader->read('mock/arquivo.log');
+$file = new File('mock/arquivo.log');
 
-// $adapter = new MonologAdapter();
+$res = $reader->read($file);
 
-// // $collection = $adapter->parse($res);
+$adapter = new MonologAdapter();
 
+$collection = $adapter->parse($res);
+
+var_dump($collection);
 // $tail = $reader->tail('mock/arquivo.log');
 
 // $collection = $adapter->parse($tail);
 
-$file = new File('mock/arquivo.log');

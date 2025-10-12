@@ -12,6 +12,11 @@ class File
         $this->validateFile($file);
     }
 
+    public function __toString()
+    {
+        return $this->file;
+    }
+
     public function validateFile(string $file): void
     {
         if(!file_exists($file)) {
