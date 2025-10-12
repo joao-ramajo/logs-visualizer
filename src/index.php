@@ -1,21 +1,11 @@
 <?php
 
-use Ramajo\Infra\Adapters\MonologAdapter;
-use Ramajo\Infra\Readers\FileReader;
-
 require_once __DIR__ . '/bootstrap.php';
 
-$reader = new FileReader();
+use Ramajo\App\LogVisualizer;
 
-$res = $reader->read('mock/arquivo.log');
+use Ramajo\Infra\Strategies\MonologStrategy;
 
-$adapter = new MonologAdapter();
+$visualizer = new LogVisualizer('mock/arquivo.log', new MonologStrategy());
 
-$collection = $adapter->parse($res);
-
-
-$entry = $collection->get(0);
-
-var_dump($entry);
-
-echo $entry->getLevel();
+var_dump($visualizer->tail());

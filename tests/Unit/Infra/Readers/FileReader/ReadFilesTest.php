@@ -1,5 +1,6 @@
 <?php
 
+use Ramajo\Core\Entities\File;
 use Ramajo\Core\Exceptions\LogFileNotFoundException;
 use Ramajo\Infra\Readers\FileReader;
 
@@ -8,7 +9,7 @@ test('retorna um array com as informações de um arquivo corretamente', functio
 
     $reader = new FileReader();
 
-    $res = $reader->read($file);
+    $res = $reader->read(new File($file));
 
     expect($res)->toBeArray();
 });
@@ -18,5 +19,5 @@ test('lança uma excessão se não encontrar o arquivo', function() {
 
     $reader = new FileReader();
 
-    $reader->read($file);
+    $reader->read(new File($file));
 })->throws(LogFileNotFoundException::class);
