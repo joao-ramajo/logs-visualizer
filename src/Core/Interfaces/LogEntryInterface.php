@@ -2,4 +2,7 @@
 
 namespace Ramajo\Core\Interfaces;
 
-interface LogEntryInterface {}
+interface LogEntryInterface
+{
+    public function toJson(): string;
+}
