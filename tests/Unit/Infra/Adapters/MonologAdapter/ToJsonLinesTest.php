@@ -2,6 +2,7 @@
 
 use Ramajo\Core\Collections\MonologEntryCollection;
 use Ramajo\Core\Entities\MonologEntry;
+use Ramajo\Core\Factories\MonologEntryFactory;
 use Ramajo\Infra\Adapters\MonologAdapter;
 
 beforeEach(function() {
@@ -11,11 +12,7 @@ beforeEach(function() {
 test('retorna uma coleção no formato JSON corretamente', function() {
     $collection = new MonologEntryCollection();
 
-    $collection->add(new MonologEntry(
-        timestamp: new DateTimeImmutable(),
-        level: 'DEBUG',
-        message: 'Message'
-    ));
+    $collection->add(MonologEntryFactory::make());
 
     $json = $this->adapter->toJson($collection);
 

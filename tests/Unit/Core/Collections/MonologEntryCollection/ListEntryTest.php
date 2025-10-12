@@ -2,39 +2,20 @@
 
 use Ramajo\Core\Collections\MonologEntryCollection;
 use Ramajo\Core\Entities\MonologEntry;
+use Ramajo\Core\Factories\MonologEntryFactory;
 
 beforeEach(function() {
     $this->collection = new MonologEntryCollection();
 
-    $this->collection->add(new MonologEntry(
-        timestamp: new DateTimeImmutable('2025-10-11 14:22:02'),
-        level: 'ERROR',
-        message: 'Unexpected token in JSON payload at line 23'
-    ));
+    $this->collection->add(MonologEntryFactory::make());
 
-    $this->collection->add(new MonologEntry(
-        timestamp: new DateTimeImmutable('2025-10-11 14:22:02'),
-        level: 'INFO',
-        message: 'Application terminated gracefully.'
-    ));
+    $this->collection->add(MonologEntryFactory::make());
 
-    $this->collection->add(new MonologEntry(
-        timestamp: new DateTimeImmutable('2025-10-11 14:22:02'),
-        level: 'INFO',
-        message: 'Application started successfully.'
-    ));
+    $this->collection->add(MonologEntryFactory::make());
 
-    $this->collection->add(new MonologEntry(
-        timestamp: new DateTimeImmutable('2025-10-11 14:22:02'),
-        level: 'DEBUG',
-        message: 'Loaded configuration file: /config/app.php'
-    ));
+    $this->collection->add(MonologEntryFactory::make());
 
-    $this->collection->add(new MonologEntry(
-        timestamp: new DateTimeImmutable('2025-10-11 14:22:05'),
-        level: 'WARNING',
-        message: 'Cache directory not found, using default.'
-    ));
+    $this->collection->add(MonologEntryFactory::make());
 });
 
 test('lista corretamente uma série de entidades', function () {
