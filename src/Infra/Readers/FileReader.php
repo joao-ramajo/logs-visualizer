@@ -3,11 +3,26 @@
 namespace Ramajo\Infra\Readers;
 
 use Ramajo\Core\Entities\File;
-use Ramajo\Core\Exceptions\LogFileNotFoundException;
 use Ramajo\Core\Interfaces\LogReaderInterface;
 
+/**
+ * Classe responsável pela leitura de arquivos de log.
+ *
+ * Implementa LogReaderInterface e fornece métodos para:
+ * - Ler todo o conteúdo de um arquivo
+ * - Obter as últimas linhas de um arquivo (tail)
+ */
 class FileReader implements LogReaderInterface
 {
+    /**
+     * Lê todas as linhas de um arquivo.
+     *
+     * @param File $file Arquivo a ser lido
+     *
+     * @return string[] Array contendo todas as linhas do arquivo
+     *
+     * @throws \RuntimeException Se o arquivo não puder ser aberto
+     */
     public function read(File $file): array
     {
         $handle = fopen($file, 'r');
@@ -22,6 +37,16 @@ class FileReader implements LogReaderInterface
         return $lines;
     }
 
+    /**
+     * Retorna as últimas $lines linhas de um arquivo, ignorando linhas vazias.
+     *
+     * @param File $file Arquivo a ser lido
+     * @param int $lines Quantidade de linhas a serem retornadas
+     *
+     * @return string[] Array contendo as últimas linhas do arquivo
+     *
+     * @throws \RuntimeException Se o arquivo não puder ser aberto
+     */
     public function tail(File $file, int $lines = 10): array
     {
         $handle = fopen($file, 'r');
