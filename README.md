@@ -47,30 +47,78 @@ composer require joao-ramajo/logs-visualizer
 
 ## Exemplo de uso
 
+### Pegar as últimas linhas de um arquivo
+
 ```php
-use Ramajo\Infra\Readers\FileReader;
-use Ramajo\Infra\Adapters\MonologAdapter;
+<?php
 
-// 1. Instancia o leitor de arquivos de log
-$reader = new FileReader();
+use Ramajo\App\LogVisualizer;
+use Ramajo\Infra\Strategies\MonologStrategy;
 
-// 2. Lê o conteúdo do arquivo de log
-// Retorna um array onde cada elemento é uma linha do log
-$content = $reader->read('storage/logs/laravel.log');
+$visualizer = new LogVisualizer('mock/arquivo.log', new MonologStrategy());
 
-// 3. Instancia o adapter para logs Monolog
-$adapter = new MonologAdapter();
+var_dump($visualizer->tail());
 
-// 4. Parseia as linhas lidas e retorna uma coleção de objetos MonologEntry
-$collection = $adapter->parse($content);
-
-// 5. Itera sobre a coleção e exibe nível e mensagem de cada log
-foreach ($collection as $entry) {
-    echo $entry->getLevel() . ': ' . $entry->getMessage() . PHP_EOL;
-}
 ```
 
->O **FileReader** lê o arquivo de log e retorna um array de linhas. O **MonologAdapter** converte essas linhas em objetos **MonologEntry**, encapsulados em uma coleção **MonologEntryCollection**, permitindo iteração e manipulação fácil dos registros.
+Com isso teremos um retorno de uma coleção de informações do arquivo como este
+
+```bash
+object(Ramajo\Core\Collections\MonologEntryCollection)#9 (1) {
+  ["entries":"Ramajo\Core\Collections\MonologEntryCollection":private]=>
+  array(1) {
+    [0]=>
+    object(Ramajo\Core\Entities\MonologEntry)#10 (3) {
+      ["timestamp"]=>
+      object(DateTimeImmutable)#11 (3) {
+        ["date"]=>
+        string(26) "2025-10-11 14:23:15.000000"
+        ["timezone_type"]=>
+        int(3)
+        ["timezone"]=>
+        string(3) "UTC"
+      }
+      ["level"]=>
+      string(4) "INFO"
+      ["message"]=>
+      string(34) "Application terminated gracefully."
+    }
+  }
+}
+
+```
+
+### Também podemos transformar em JSON
+
+```php
+use Ramajo\App\LogVisualizer;
+use Ramajo\Infra\Strategies\MonologStrategy;
+
+$visualizer = new LogVisualizer('mock/arquivo.log', new MonologStrategy());
+
+$tail = $visualizer->tail();
+
+$json = $visualizer->toJson($tail);
+
+echo $json;
+```
+
+Com isso teremos um retorno como
+
+```json
+[
+  {
+    "timestamp":"2025-10-11 14:23:15",
+    "level":"INFO",
+    "message":"Application terminated gracefully."
+  },
+  {
+    "timestamp":"2025-10-11 14:24:01",
+    "level":"ERROR",
+    "message":"Something went wrong."
+  }
+]
+```
 
 ---
 

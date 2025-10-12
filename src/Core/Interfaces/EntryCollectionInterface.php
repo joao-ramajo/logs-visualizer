@@ -2,10 +2,13 @@
 
 namespace Ramajo\Core\Interfaces;
 
-interface EntryCollectionInterface
+use IteratorAggregate;
+
+interface EntryCollectionInterface extends IteratorAggregate
 {
     public function add(LogEntryInterface $entry): void;
+
     public function all(): array;
-    
+
     public function get(int $index): ?LogEntryInterface;
 }

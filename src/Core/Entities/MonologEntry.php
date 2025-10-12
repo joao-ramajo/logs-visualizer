@@ -27,4 +27,18 @@ class MonologEntry implements LogEntryInterface
     {
         return $this->timestamp;
     }
+
+    public function toArray(): array
+    {
+        return [
+            'timestamp' => $this->timestamp,
+            'level' => $this->level,
+            'message' => $this->message
+        ];
+    }
+
+    public function toJson()
+    {
+        return json_encode($this->toArray());
+    }
 }

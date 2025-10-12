@@ -24,4 +24,9 @@ class MonologStrategy implements \Ramajo\Core\Interfaces\LogStrategyInterface
         $content = $this->reader->tail($file, $lines);
         return $this->adapter->parse($content);
     }
+
+    public function toJson(EntryCollectionInterface $entries): string
+    {
+        return $this->adapter->toJson($entries);
+    }
 }
