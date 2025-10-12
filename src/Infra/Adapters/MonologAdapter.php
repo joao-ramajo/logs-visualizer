@@ -19,6 +19,7 @@ class MonologAdapter implements LogAdapterInterface
             if (preg_match('/^\[(?<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\]\s+(?<channel>[\w-]+)\.(?<level>\w+):\s+(?<message>.*?)(?:\s+(?<context>\{.*\}))?$/s', trim($line), $matches)) {
                 $collection->add(new MonologEntry(
                     timestamp: new DateTimeImmutable($matches['timestamp']),
+                    channel: $matches['channel'],
                     level: $matches['level'],
                     message: $matches['message'],
                     context: $matches['context'] ?? null
