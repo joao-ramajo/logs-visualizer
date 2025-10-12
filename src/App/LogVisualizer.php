@@ -10,7 +10,7 @@ class LogVisualizer
     private File $file;
 
     public function __construct(
-        private string $path,
+        string $path,
         private LogStrategyInterface $strategy
     )
     {
