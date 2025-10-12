@@ -1,0 +1,500 @@
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":183,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"78%","available":"3GB"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"86%","available":"1GB"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"708ms","threshold":"500ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"PUT","response_time":"329ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Null pointer exception {"filename":"document_76.pdf","size":"29MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"9ms"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:55","ttl":1171,"size":"33KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:26","ttl":3281,"size":"28KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15389f43"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"9ms"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"GET","response_time":"190ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[516],"time":"32ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":135,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"3ms"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/products","method":"GET","response_time":"486ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":1589,"amount":"324.00","gateway":"stripe","error_code":"INSUFFICIENT_FUNDS","user_id":28} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"POST","response_time":"360ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"87%","available":"3GB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"5ms"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"81%","available":"2GB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"5ms"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:14","ttl":1010,"size":"27KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[613],"time":"21ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Permission denied {"filename":"document_4.pdf","size":"28MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.CRITICAL: Security breach attempt detected {"ip":"192.168.50.10","endpoint":"/admin/users","attack_type":"CSRF","blocked":true,"ban_duration":"24h"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Null pointer exception {"host":"localhost","port":3306,"database":"postgresql","attempt":1,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[208],"time":"32ms","database":"redis"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:63","ttl":2828,"size":"76KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":1,"async":false} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:29","ttl":2993,"size":"50KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:139","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538b808"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:60","ttl":2823,"size":"40KB"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Invalid JSON payload {"filename":"document_51.pdf","size":"9MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"PUT","response_time":"206ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Disk quota exceeded {"filename":"document_91.pdf","size":"14MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538bc10"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"89%","available":"1GB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538bdc2"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538bf96"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":177,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"PUT","response_time":"35ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"GET","response_time":"264ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/products","method":"PUT","response_time":"308ms","status_code":200} 
+[2025-10-12 17:11:47] local.CRITICAL: Service unavailable {"service":"cache","downtime":"40 minutes","impact":"high","fallback":"enabled"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"PUT","response_time":"214ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:309","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"DELETE","response_time":"284ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:17","ttl":2262,"size":"56KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":5,"async":true} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"PUT","response_time":"486ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"121ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"DELETE","response_time":"64ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538d09f"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"76%","available":"1GB"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":115,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538d30c"} 
+[2025-10-12 17:11:47] local.CRITICAL: Service unavailable {"service":"cdn","downtime":"41 minutes","impact":"high","fallback":"enabled"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:410","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:49","ttl":1816,"size":"26KB"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":9573,"amount":"729.00","gateway":"paypal","error_code":"INSUFFICIENT_FUNDS","user_id":36} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538d7cb"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:380","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538d93c"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"PUT","response_time":"204ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:12","ttl":1613,"size":"81KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:16","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":137,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538de91"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:18","ttl":1710,"size":"90KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":3,"async":true} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:85","fallback":"database"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:8","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"86%","available":"2GB"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":3,"async":false} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/payments","current":89,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"POST","response_time":"357ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:97","ttl":500,"size":"85KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:99","ttl":1144,"size":"59KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:246","fallback":"database"} 
+[2025-10-12 17:11:47] local.CRITICAL: Security breach attempt detected {"ip":"10.0.0.50","endpoint":"/admin/users","attack_type":"SQL Injection","blocked":true,"ban_duration":"24h"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538ead2"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"5ms"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:79","ttl":3160,"size":"13KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:172","fallback":"database"} 
+[2025-10-12 17:11:47] local.CRITICAL: Database corruption detected {"table":"users","affected_rows":9586,"database":"mongodb","action_required":"immediate"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":199,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1290ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":4,"async":true} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:53","ttl":2715,"size":"7KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:20","fallback":"database"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":2,"async":false} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":3,"async":true} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"79%","available":"2GB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"81%","available":"4GB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[159],"time":"6ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"GET","response_time":"278ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:382","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[328],"time":"48ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:78","ttl":937,"size":"60KB"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"79%","available":"3GB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1538fb65"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"851ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:18","ttl":2281,"size":"54KB"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/orders","method":"DELETE","response_time":"347ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[460],"time":"29ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Invalid JSON payload {"host":"localhost","port":3306,"database":"mongodb","attempt":3,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"9ms"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:92","ttl":3219,"size":"25KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"6ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"1ms"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/products","current":88,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Permission denied {"filename":"document_99.pdf","size":"49MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":126,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:157","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/login","current":98,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:86","ttl":1000,"size":"99KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.CRITICAL: Service unavailable {"service":"payment-gateway","downtime":"15 minutes","impact":"high","fallback":"enabled"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/products","current":85,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:18","ttl":609,"size":"5KB"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"35ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:306","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:23","ttl":315,"size":"16KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539103f"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:14","ttl":2943,"size":"91KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[213],"time":"33ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/products","method":"GET","response_time":"355ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Permission denied {"filename":"document_48.pdf","size":"49MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"4ms"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[679],"time":"21ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":503,"response_time":"2917ms","retry_count":1} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:60","ttl":422,"size":"44KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:61","ttl":2780,"size":"37KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[257],"time":"16ms","database":"redis"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:485","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1479ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153919a2"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":169,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15391ae6"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1086ms","threshold":"500ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15391c31"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:48","ttl":1550,"size":"96KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[21],"time":"50ms","database":"redis"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":196,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[113],"time":"35ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":1,"async":false} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:12","fallback":"database"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":4,"async":false} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Timeout after 30 seconds {"host":"localhost","port":3306,"database":"mongodb","attempt":1,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[818],"time":"14ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153922ec"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":68,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":9509,"amount":"881.00","gateway":"paypal","error_code":"INSUFFICIENT_FUNDS","user_id":38} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[996],"time":"50ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:72","ttl":1619,"size":"92KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"9ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/users","current":99,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15392936"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:55","ttl":594,"size":"28KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:238","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"127ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"10ms"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":9119,"amount":"200.00","gateway":"paypal","error_code":"INSUFFICIENT_FUNDS","user_id":46} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"89%","available":"2GB"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":101,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/products","method":"DELETE","response_time":"68ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15392fac"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[552],"time":"12ms","database":"redis"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:16","ttl":656,"size":"50KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:28","ttl":3393,"size":"56KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:53","ttl":3513,"size":"43KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153932c9"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"86%","available":"5GB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15393403"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"PUT","response_time":"429ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:133","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1957ms","threshold":"500ms","database":"redis"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Permission denied {"host":"localhost","port":3306,"database":"mongodb","attempt":2,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Null pointer exception {"filename":"document_74.pdf","size":"20MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[278],"time":"22ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":3791,"amount":"78.00","gateway":"mercadopago","error_code":"INSUFFICIENT_FUNDS","user_id":79} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:134","fallback":"database"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Permission denied {"filename":"document_82.pdf","size":"19MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":401,"response_time":"3455ms","retry_count":3} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":2,"async":true} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:20","ttl":2465,"size":"61KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:158","fallback":"database"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":1,"async":false} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"7ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"GET","response_time":"253ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15393f1a"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[531],"time":"14ms","database":"redis"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/payments","current":84,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153940bb"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/orders","current":85,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"POST","response_time":"241ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[782],"time":"3ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539436c"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:342","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"1ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:145","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.CRITICAL: Security breach attempt detected {"ip":"192.168.50.10","endpoint":"/admin/users","attack_type":"SQL Injection","blocked":true,"ban_duration":"24h"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"GET","response_time":"266ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":4,"async":false} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"75%","available":"5GB"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Invalid JSON payload {"filename":"document_23.pdf","size":"43MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":5,"async":false} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15394a73"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:35","ttl":3549,"size":"32KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15394b74"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"DELETE","response_time":"171ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:58","ttl":1062,"size":"40KB"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1472ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"87%","available":"2GB"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/login","current":90,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:482","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/products","current":89,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:73","ttl":2868,"size":"32KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:39","ttl":3096,"size":"11KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:16","ttl":2539,"size":"85KB"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":142,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Invalid JSON payload {"filename":"document_86.pdf","size":"2MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:77","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395272"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1294ms","threshold":"500ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"133ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153953ce"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/dashboard","current":86,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":1,"async":false} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"799ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:492","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"POST","response_time":"392ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":503,"response_time":"1649ms","retry_count":1} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395709"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1596ms","threshold":"500ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.CRITICAL: Database corruption detected {"table":"orders","affected_rows":5427,"database":"mongodb","action_required":"immediate"} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":400,"response_time":"3502ms","retry_count":0} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":1860,"amount":"65.00","gateway":"mercadopago","error_code":"INSUFFICIENT_FUNDS","user_id":42} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"PUT","response_time":"106ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395a4c"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/orders","method":"DELETE","response_time":"243ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395b39"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"77%","available":"3GB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395c24"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395c9d"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.CRITICAL: Security breach attempt detected {"ip":"10.0.0.50","endpoint":"/admin/users","attack_type":"XSS","blocked":true,"ban_duration":"24h"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395e02"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"PUT","response_time":"336ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:95","ttl":2850,"size":"62KB"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Invalid JSON payload {"host":"localhost","port":3306,"database":"postgresql","attempt":1,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15395fe4"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"PUT","response_time":"396ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:64","ttl":542,"size":"95KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:41","ttl":3441,"size":"74KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153961b6"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":86,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"8ms"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539631b"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/login","current":87,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"GET","response_time":"176ms","status_code":200} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":112,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":5,"async":true} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1046ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[968],"time":"36ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"85%","available":"2GB"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"GET","response_time":"18ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"PUT","response_time":"432ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:51","ttl":731,"size":"19KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Disk quota exceeded {"host":"localhost","port":3306,"database":"postgresql","attempt":1,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539699a"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15396a15"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:157","fallback":"database"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:59","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15396b6c"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/orders","method":"PUT","response_time":"421ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:329","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:4","ttl":2751,"size":"31KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":3,"async":true} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/orders","current":94,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:272","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/orders","current":94,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Disk quota exceeded {"host":"localhost","port":3306,"database":"redis","attempt":2,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"75%","available":"3GB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:93","ttl":494,"size":"17KB"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/orders","method":"DELETE","response_time":"360ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":4,"async":false} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"9ms"} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":403,"response_time":"2086ms","retry_count":3} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1858ms","threshold":"500ms","database":"redis"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:27","ttl":2653,"size":"24KB"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"PUT","response_time":"47ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":6583,"amount":"298.00","gateway":"mercadopago","error_code":"INSUFFICIENT_FUNDS","user_id":26} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/products","method":"GET","response_time":"276ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"DELETE","response_time":"273ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"443ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"POST","response_time":"278ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:86","ttl":1967,"size":"69KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.CRITICAL: Database corruption detected {"table":"orders","affected_rows":6389,"database":"mongodb","action_required":"immediate"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:77","ttl":2444,"size":"5KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:60","ttl":1394,"size":"95KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:39","ttl":2082,"size":"76KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"1ms"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"8ms"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:146","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15397c6c"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Invalid JSON payload {"filename":"document_5.pdf","size":"35MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Permission denied {"filename":"document_62.pdf","size":"44MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:34","ttl":1140,"size":"86KB"} 
+[2025-10-12 17:11:47] local.CRITICAL: Database corruption detected {"table":"orders","affected_rows":7136,"database":"redis","action_required":"immediate"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/dashboard","current":97,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:25","ttl":2098,"size":"81KB"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1341ms","threshold":"500ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:446","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:76","ttl":1952,"size":"25KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:17","ttl":2129,"size":"84KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe153982e3"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/payments","method":"DELETE","response_time":"475ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"78ms","status_code":200} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":400,"response_time":"4185ms","retry_count":0} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"POST","response_time":"313ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:69","ttl":2495,"size":"16KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"1ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:59","ttl":804,"size":"86KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:46","ttl":2322,"size":"47KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[247],"time":"26ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"POST","response_time":"71ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:94","ttl":3122,"size":"10KB"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Timeout after 30 seconds {"host":"localhost","port":3306,"database":"mongodb","attempt":2,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15398ac8"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15398b3c"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"POST","response_time":"114ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:89","ttl":1080,"size":"71KB"} 
+[2025-10-12 17:11:47] local.CRITICAL: Security breach attempt detected {"ip":"192.168.50.10","endpoint":"/admin/users","attack_type":"Brute Force","blocked":true,"ban_duration":"24h"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Permission denied {"filename":"document_35.pdf","size":"50MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[393],"time":"5ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15398e08"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":136,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"88%","available":"2GB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:45","ttl":2860,"size":"88KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[465],"time":"12ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":191,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":5,"async":true} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":2,"async":true} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":5,"async":true} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[498],"time":"7ms","database":"mongodb"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Timeout after 30 seconds {"host":"localhost","port":3306,"database":"mongodb","attempt":2,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":1560,"amount":"875.00","gateway":"mercadopago","error_code":"INSUFFICIENT_FUNDS","user_id":17} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":5,"async":true} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Null pointer exception {"filename":"document_3.pdf","size":"43MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.CRITICAL: Application crashed {"exception":"FatalErrorException","message":"Maximum execution time of 30 seconds exceeded","file":"app/Services/ReportService.php","line":441,"memory_usage":"342MB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:86","ttl":1627,"size":"69KB"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:58","ttl":1088,"size":"29KB"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"87%","available":"2GB"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Invalid JSON payload {"host":"localhost","port":3306,"database":"mysql","attempt":1,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"7ms"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"PUT","response_time":"472ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539982b"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:70","ttl":478,"size":"59KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"5ms"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Permission denied {"host":"localhost","port":3306,"database":"mongodb","attempt":3,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.CRITICAL: Application crashed {"exception":"FatalErrorException","message":"Maximum execution time of 30 seconds exceeded","file":"app/Services/ReportService.php","line":410,"memory_usage":"511MB"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:182","fallback":"database"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"80%","available":"5GB"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Timeout after 30 seconds {"filename":"document_48.pdf","size":"26MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":141,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[265],"time":"20ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/users","method":"PUT","response_time":"49ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe15399d4e"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:71","ttl":2570,"size":"33KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"auth","duration":"10ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Null pointer exception {"filename":"document_92.pdf","size":"47MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Connection refused {"filename":"document_67.pdf","size":"48MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a01d"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":4454,"amount":"385.00","gateway":"stripe","error_code":"INSUFFICIENT_FUNDS","user_id":90} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1592ms","threshold":"500ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a201"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/products","current":99,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Invalid JSON payload {"filename":"document_92.pdf","size":"50MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/login","method":"PUT","response_time":"160ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:19","ttl":592,"size":"26KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a451"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"João Silva","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a4ce"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"throttle","duration":"5ms"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a62b"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Maria Santos","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a719"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Disk quota exceeded {"filename":"document_91.pdf","size":"25MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":3,"async":false} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539a87f"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":4629,"amount":"631.00","gateway":"mercadopago","error_code":"INSUFFICIENT_FUNDS","user_id":54} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:1","ttl":498,"size":"70KB"} 
+[2025-10-12 17:11:47] local.DEBUG: Middleware executed {"middleware":"cors","duration":"1ms"} 
+[2025-10-12 17:11:47] local.CRITICAL: Security breach attempt detected {"ip":"192.168.50.10","endpoint":"/admin/users","attack_type":"CSRF","blocked":true,"ban_duration":"24h"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Ana Costa","ip":"192.168.1.100","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539aad2"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"172.16.0.23","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539ab47"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/products","current":99,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/dashboard","method":"DELETE","response_time":"469ms","status_code":200} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"5s"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/users","current":84,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Ana Costa","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:34","ttl":816,"size":"49KB"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"75%","available":"1GB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539af6b"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1918ms","threshold":"500ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/payments","current":85,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[436],"time":"38ms","database":"mysql"} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":403,"response_time":"3708ms","retry_count":1} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":2,"async":true} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:58","ttl":3597,"size":"14KB"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Pedro Oliveira","ip":"10.0.0.50","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539b31e"} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"80%","available":"1GB"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":4113,"amount":"227.00","gateway":"stripe","error_code":"INSUFFICIENT_FUNDS","user_id":11} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":98,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.ERROR: API request failed {"endpoint":"https://api.external.com/v1/data","status_code":400,"response_time":"4200ms","retry_count":2} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:477","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.ERROR: Failed to process payment {"order_id":7715,"amount":"895.00","gateway":"paypal","error_code":"INSUFFICIENT_FUNDS","user_id":96} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Connection refused {"filename":"document_17.pdf","size":"5MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Carlos Souza","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/orders","method":"GET","response_time":"113ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Query executed {"query":"SELECT * FROM users WHERE id = ?","bindings":[332],"time":"11ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1787ms","threshold":"500ms","database":"postgresql"} 
+[2025-10-12 17:11:47] local.WARNING: Slow query detected {"query":"SELECT * FROM orders WHERE created_at > ?","time":"1351ms","threshold":"500ms","database":"redis"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:45","ttl":1697,"size":"31KB"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"0s"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Timeout after 30 seconds {"filename":"document_73.pdf","size":"40MB","max_size":"10MB","disk":"s3"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:126","fallback":"database"} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":4,"async":false} 
+[2025-10-12 17:11:47] local.WARNING: Disk space running low {"partition":"/var/log","used":"88%","available":"1GB"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":59,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: Cache hit {"key":"user:54","ttl":2952,"size":"49KB"} 
+[2025-10-12 17:11:47] local.ERROR: Database connection failed: Null pointer exception {"host":"localhost","port":3306,"database":"mongodb","attempt":2,"exception":"PDOException"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"2s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"João Silva","subject":"Welcome to our platform","queue":"emails","delay":"1s"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Pedro Oliveira","subject":"Welcome to our platform","queue":"emails","delay":"3s"} 
+[2025-10-12 17:11:47] local.INFO: User logged in successfully {"user":"Carlos Souza","ip":"192.168.50.10","user_agent":"Mozilla/5.0","session_id":"sess_68ebe1539bf17"} 
+[2025-10-12 17:11:47] local.DEBUG: Cache miss, fetching from database {"key":"product:492","fallback":"database"} 
+[2025-10-12 17:11:47] local.INFO: API request completed {"endpoint":"/api/products","method":"PUT","response_time":"90ms","status_code":200} 
+[2025-10-12 17:11:47] local.DEBUG: Event dispatched {"event":"UserRegistered","listeners":1,"async":true} 
+[2025-10-12 17:11:47] local.WARNING: API rate limit approaching {"endpoint":"/api/products","current":92,"limit":100,"window":"1 minute"} 
+[2025-10-12 17:11:47] local.WARNING: Deprecated method called {"method":"User::find()","file":"app/Http/Controllers/UserController.php","line":89,"replacement":"User::findOrFail()"} 
+[2025-10-12 17:11:47] local.INFO: Email sent successfully {"recipient":"Maria Santos","subject":"Welcome to our platform","queue":"emails","delay":"4s"} 
+[2025-10-12 17:11:47] local.ERROR: File upload failed: Connection refused {"filename":"document_45.pdf","size":"42MB","max_size":"10MB","disk":"s3"} 
