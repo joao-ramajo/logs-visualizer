@@ -8,5 +8,5 @@ interface LogReaderInterface
 {
     public function read(File $file): array;
 
-    public function tail(string $file, int $lines): array;
+    public function tail(File $file, int $lines): array;
 }

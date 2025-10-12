@@ -22,12 +22,8 @@ class FileReader implements LogReaderInterface
         return $lines;
     }
 
-    public function tail(string $file, int $lines = 10): array
+    public function tail(File $file, int $lines = 10): array
     {
-        if (!file_exists($file)) {
-            throw new LogFileNotFoundException($file);
-        }
-
         $handle = fopen($file, 'r');
         if ($handle === false) {
             throw new \RuntimeException("Não foi possível abrir o arquivo: $file");
@@ -57,7 +53,7 @@ class FileReader implements LogReaderInterface
         }
 
         if (trim($buffer) !== '' && $count < $lines) {
-            $content[] = strrev($buffer) . "\n" . $content;
+            $content[] = strrev($buffer) . "\n";
         }
 
         fclose($handle);
