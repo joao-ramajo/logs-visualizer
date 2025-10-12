@@ -7,15 +7,13 @@ require_once __DIR__ . '/bootstrap.php';
 
 $reader = new FileReader();
 
-$res = $reader->read('mock/arquivo.log');
+// $res = $reader->read('mock/arquivo.log');
 
 $adapter = new MonologAdapter();
 
-$collection = $adapter->parse($res);
+// $collection = $adapter->parse($res);
 
+$tail = $reader->tail('mock/arquivo.log');
 
-$entry = $collection->get(0);
+$collection = $adapter->parse($tail);
 
-var_dump($entry);
-
-echo $entry->getLevel();
