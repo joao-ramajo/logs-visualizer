@@ -19,6 +19,6 @@ test('adiciona uma entidade corretamente dentro da coleção', function() {
     expect($collection->count())->toBe(1);
 
     foreach($collection as $entry){
-        expect($entry)->toBeAnInstanceOf(MonologEntry::class);
+        expect($entry)->toBeInstanceOf(MonologEntry::class);
     }
 });
