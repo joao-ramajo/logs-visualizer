@@ -10,3 +10,5 @@ $visualizer = new LogVisualizer('mock/laravel.log', new MonologStrategy());
 $tail = $visualizer->tail();
 
 $json = $tail->toJson();
+
+echo $json;

@@ -33,6 +33,11 @@ class MonologEntryCollection implements EntryCollectionInterface, Countable
         return $this->entries[$index];
     }
 
+    public function toJson(): string
+    {
+        return json_encode(array_map(fn($entry) => json_decode($entry->toJson(), true), $this->entries));
+    }
+
     public function getIterator(): \Traversable
     {
         return new \ArrayIterator($this->entries);

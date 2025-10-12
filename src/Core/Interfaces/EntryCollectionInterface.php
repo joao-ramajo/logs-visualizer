@@ -11,4 +11,6 @@ interface EntryCollectionInterface extends IteratorAggregate
     public function all(): array;
 
     public function get(int $index): ?LogEntryInterface;
+
+    public function toJson(): string;
 }
