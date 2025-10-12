@@ -5,9 +5,11 @@ require_once __DIR__ . '/bootstrap.php';
 use Ramajo\App\LogVisualizer;
 use Ramajo\Infra\Strategies\MonologStrategy;
 
-$visualizer = new LogVisualizer('mock/arquivo.log', new MonologStrategy());
+$visualizer = new LogVisualizer('mock/laravel.log', new MonologStrategy());
 
-$tail = $visualizer->tail();
+$collection = $visualizer->tail();
 
-var_dump($tail);
+$json = $collection->toJson();
+$index = $collection->get(5213);
 
+var_dump($index);
