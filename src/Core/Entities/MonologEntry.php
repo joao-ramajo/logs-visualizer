@@ -10,7 +10,8 @@ class MonologEntry implements LogEntryInterface
     public function __construct(
         public DateTimeImmutable $timestamp,
         public string $level,
-        public string $message
+        public string $message,
+        public ?string $context = null
     ) {}
 
     public function getLevel(): string
@@ -26,6 +27,11 @@ class MonologEntry implements LogEntryInterface
     public function getTimestamp(): DateTimeImmutable
     {
         return $this->timestamp;
+    }
+
+    public function getContext(): ?string
+    {
+        return $this->context;
     }
 
     public function toArray(): array
